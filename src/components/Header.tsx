@@ -24,12 +24,12 @@ export default function Header() {
     <div>
     <div className="w-screen h-20 z-50 top-0 fixed justify-between bg-white lg:justify-around flex items-center px-5">
         <div className='hidden lg:flex flex-col'>
-            <Image src={logoimagem} width={140} height={140}/>
+            <Image src={logoimagem} width={140} height={140} alt="Descrição da imagem" />
           
         </div>
 
         <div className='lg:hidden flex flex-col'>
-            <Image src={logoimagem} width={80} height={80}/>
+            <Image src={logoimagem} width={80} height={80} alt="Descrição da imagem" />
           
         </div>
 
