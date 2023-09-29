@@ -19,14 +19,14 @@ export default function ItensPlanos() {
             id: '1',
             name: '',
             plano: 400,
-            price: 89.90,
+            price: 89,
             description: 'Plano com vantagens de HBO'
         },
         {
             id: '2',
             name: '',
             plano: 400,
-            price: 89.90,
+            price: 89,
             description: ''
         },
 
@@ -34,7 +34,7 @@ export default function ItensPlanos() {
             id: '3',
             name: '',
             plano: 700,
-            price: 89.90,
+            price: 89,
             description: ''
         }
     ]

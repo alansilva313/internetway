@@ -1,3 +1,5 @@
+import Beneficios from "@/components/Beneficios";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Planos from "@/components/Planos";
 import Slider from "@/components/Slider";
@@ -12,6 +14,11 @@ export default function Home() {
 
     <Planos />
 
+
+    <Beneficios />
+
+
+   <Footer />
   </div>
   )
 }

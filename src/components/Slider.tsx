@@ -14,7 +14,7 @@ import { EffectFade, Navigation, Pagination } from 'swiper/modules';
 export default function Slider() {
 
   const data = [
-    {id: '1', image: '/cpa1.jpg'},
+    {id: '1', image: '/cpa1 (3).jpg'},
     {id: '2', image: '/cpa2.jpg'},
     {id: '3', image: '/cpa3.jpg'}
   ]
