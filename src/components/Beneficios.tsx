@@ -1,6 +1,10 @@
-import React from 'react'
+'use client'
 
+import React, {useRef} from 'react'
+import { motion, useScroll } from "framer-motion"
 export default function Beneficios() {
+    const { scrollYProgress } = useScroll();
+    const scrollRef = useRef(null)
 
     const difenci = [
         {
@@ -25,15 +29,22 @@ export default function Beneficios() {
         <h3 className='text-2xl font-bold'>Nossos <strong className='text-orange-500'>diferenciais</strong> para sua casa</h3>
       </div>
 
-      <div className='p-4 flex flex-col gap-8'>
+      <div className='p-4 flex flex-col gap-8' ref={scrollRef} style={{ overflow: "scroll" }}>
         {
             difenci.map((item) => (
-                <div key={item.id}>
+                <motion.div key={item.id}  
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ root: scrollRef }}
+                
+               
+               
+                >
                     
                     <h3 className='font-bold'>{item.title}</h3>
                     <p>{item.description}</p>
 
-                </div>
+                </motion.div>
             ))
         }
 
