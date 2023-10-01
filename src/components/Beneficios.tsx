@@ -26,10 +26,10 @@ export default function Beneficios() {
   return (
     <div className='w-full p-4 mt-12 mb-40 gap-6'>
       <div className='p-4'>
-        <h3 className='text-2xl font-bold'>Nossos <strong className='text-orange-500'>diferenciais</strong> para sua casa</h3>
+        <h3 className='text-2xl font-bold dark:text-white'>Nossos <strong className='text-orange-500'>diferenciais</strong> para sua casa</h3>
       </div>
 
-      <div className='p-4 flex flex-col gap-8' ref={scrollRef} style={{ overflow: "scroll" }}>
+      <div className='p-4 flex flex-col gap-8' ref={scrollRef} style={{ overflow: "hidden" }}>
         {
             difenci.map((item) => (
                 <motion.div key={item.id}  
@@ -41,8 +41,8 @@ export default function Beneficios() {
                
                 >
                     
-                    <h3 className='font-bold'>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <h3 className='font-bold dark:text-white'>{item.title}</h3>
+                    <p className='dark:text-white'>{item.description}</p>
 
                 </motion.div>
             ))

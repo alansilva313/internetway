@@ -19,13 +19,13 @@ export default function ItensPlanos() {
             id: '1',
             name: '',
             plano: 400,
-            price: 89,
+            price: 79,
             description: 'Plano com vantagens de HBO'
         },
         {
             id: '2',
             name: '',
-            plano: 400,
+            plano: 500,
             price: 89,
             description: ''
         },
@@ -34,7 +34,7 @@ export default function ItensPlanos() {
             id: '3',
             name: '',
             plano: 700,
-            price: 89,
+            price: 109,
             description: ''
         }
     ]
@@ -46,19 +46,20 @@ export default function ItensPlanos() {
  
 
             {planos.map((item) => (
-                 <div key={item.id} className="flex flex-col lg:w-[380px] lg:h-[380px] justify-between w-full rounded-lg border-zinc-400  shadow active:shadow-lg hover:shadow-lg py-4 pb-4">
-                 <div className="flex items-center justify-center ">
-                   <h3 className="text-3xl">{item.plano} mb</h3>
+                 <div key={item.id} className="flex flex-col  hover:scale-105 transition-all lg:w-[380px] lg:h-[380px] justify-between w-full rounded-lg border-zinc-400  dark:bg-zinc-800 shadow active:shadow-lg hover:shadow-lg py-4 pb-4">
+                 <div className="flex flex-col p-4 items-center justify-center ">
+                   <h3 className="text-3xl font-bold dark:text-orange-500">{item.plano} mb</h3>
+                   <hr className='text-black w-full mt-4'/>
                  </div>
-     
-                 <div className="flex w-full  items-center text-white justify-center px-2 bg-orange-500 h-20">
+                
+                 <div className="flex w-full font-bold items-center dark:text-white text-slate-400 justify-center px-2  h-40">
                      <div>
                          <p>por</p>
                          <p>R$</p>
                      </div>
      
                      <div>
-                         <p className="text-5xl">{item.price}</p>
+                         <p className="text-7xl">{item.price}</p>
                      </div>
      
                      <div>
@@ -68,7 +69,7 @@ export default function ItensPlanos() {
      
                  </div>
      
-                 <div className="flex flex-col items-center justify-center">
+                 <div className="flex flex-col items-center dark:text-white h-20 justify-center">
                      <p>beneficios</p>
                      <h3>{item.description}</h3>
                  </div>

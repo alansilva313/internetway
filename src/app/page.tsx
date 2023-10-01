@@ -7,7 +7,7 @@ import Slider from "@/components/Slider";
 
 export default function Home() {
   return (
-  <div className="w-full h-screen">
+  <div className="w-full dark:bg-zinc-950 h-full">
     <Header />
 
     <Slider />

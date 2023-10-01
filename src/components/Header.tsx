@@ -22,7 +22,7 @@ export default function Header() {
   return (
 
     <div>
-    <div className="w-screen h-20 z-50 top-0 fixed justify-between bg-white lg:justify-around flex items-center px-5">
+    <div className="w-screen h-20 z-50 top-0 fixed justify-between bg-white dark:bg-zinc-950 lg:justify-around flex items-center px-5">
         <div className='hidden lg:flex flex-col'>
             <a href="#">
             <Image src={logoimagem} width={140} height={140} alt="Descrição da imagem" />
@@ -54,7 +54,7 @@ export default function Header() {
             </nav>
         </div>
 
-        <div className='flex lg:hidden'>
+        <div className='flex lg:hidden dark:text-white'>
             <button onClick={showMenu}>
                 {menu === 'flex' ? <X /> : <Menu /> }
              
@@ -65,7 +65,7 @@ export default function Header() {
     </div>
 
     
-    <div className={`${menu} w-screen  h-[calc(100vh-81px)] z-10 bg-zinc-200 fixed top-20 items-stretch`}>
+    <div className={`${menu} w-screen  h-[calc(100vh-81px)] z-10 bg-zinc-200 dark:bg-zinc-600 dark:text-white fixed top-20 items-stretch`}>
     <div className="flex w-full flex-col">
             <nav >
                 <ul className="flex flex-col w-full gap-6">
