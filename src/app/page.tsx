@@ -1,4 +1,5 @@
 import Beneficios from "@/components/Beneficios";
+import DuvidasFrequentes from "@/components/DuvidasFrequentes";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Planos from "@/components/Planos";
@@ -16,6 +17,8 @@ export default function Home() {
 
 
     <Beneficios />
+
+    <DuvidasFrequentes />
 
 
    <Footer />

@@ -24,7 +24,7 @@ export default function Planos() {
 
     
     <div className="p-4 flex items-center justify-center">
-            <h3>Ver mais planos</h3>
+            <h3 className="dark:text-white">Ver mais planos</h3>
         </div>
 
 
