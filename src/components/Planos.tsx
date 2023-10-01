@@ -5,7 +5,7 @@ export default function Planos() {
 
     <div className="flex flex-col">
 
-<div className="w-full flex p-4 items-start  justify-center">
+<div className="w-full flex p-8 items-start  justify-center">
             <h3 className="text-2xl dark:text-white">Confira nossos planos, melhor qualidade para você!</h3>
         </div>
         

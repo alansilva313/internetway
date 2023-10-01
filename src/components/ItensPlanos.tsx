@@ -42,7 +42,7 @@ export default function ItensPlanos() {
 
   return (
 
-    <div className='w-full flex flex-col items-center justify-center lg:flex-row md:flex-row gap-4 p-4 scroll-mr-1'>
+    <div className='w-full flex flex-col items-center justify-center lg:flex-row md:flex-row lg:px-10 md:px-1 gap-4 p-4 scroll-mr-1'>
  
 
             {planos.map((item) => (

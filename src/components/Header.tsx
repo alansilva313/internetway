@@ -41,11 +41,11 @@ export default function Header() {
 
         <div className="hidden lg:flex">
             <nav>
-                <ul className="flex gap-6 items-center">
-                    <li className='hover:text-orange-500 cursor-pointer'>Para você</li>
-                    <li className='hover:text-orange-500 cursor-pointer'>Para Empresa</li>
-                    <li className='hover:text-orange-500 cursor-pointer'>Planos</li>
-                    <li className='hover:text-orange-500 cursor-pointer'>App Way</li>
+                <ul className="flex gap-6 items-center ">
+                    <li className='hover:text-orange-500 cursor-pointer dark:text-white'>Para você</li>
+                    <li className='hover:text-orange-500 cursor-pointer dark:text-white'>Para Empresa</li>
+                    <li className='hover:text-orange-500 cursor-pointer dark:text-white'>Planos</li>
+                    <li className='hover:text-orange-500 cursor-pointer dark:text-white'>App Way</li>
                     <li>
                         <button className='bg-orange-500 flex items px-8 py-2 hover:bg-orange-600 rounded text-white cursor-pointer'><User /> Portal</button>
                     </li>
